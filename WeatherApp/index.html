@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Meteo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="src/weatherApp.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Previsioni Meteo</h1>
+        <div class="input-group">
+            <input type="text" id="cityInput" placeholder="Inserisci il nome della città">
+            <button id="searchBtn">Cerca</button>
+        </div>
+        <div id="status"></div>
+        <div id="weather"></div>
+    </div>
+
+
+    <script>
+        document.getElementById('searchBtn').addEventListener('click', async () => {
+            const city = document.getElementById('cityInput').value;
+
+            // Validazione dell'input
+            if (!validateCityName(city)) {
+                displayStatusMessage('Inserisci un nome di città valido.');
+                document.getElementById('weather').innerHTML = '';
+                return;
+            }
+
+            displayStatusMessage('Caricamento in corso...');
+            document.getElementById('weather').innerHTML = '';
+
+            try {
+                const weatherData = await fetchWeatherData(city);
+                displayWeatherData(weatherData);
+                displayStatusMessage('Dati aggiornati.');
+            } catch (error) {
+                displayStatusMessage(`Errore: ${error.message}`);
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
