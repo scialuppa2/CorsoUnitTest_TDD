@@ -30,12 +30,12 @@ L'applicazione utilizza l'API di [OpenWeatherMap](https://openweathermap.org/) p
 
 ## Struttura del Progetto
 
-Meteo-Test/ 
-├── index.html # Interfaccia utente principale 
-├── styles.css # Stili CSS per l'interfaccia 
-├── package.json # Configurazione del progetto Node.js 
-├── jest.config.cjs # Configurazione di Jest (CommonJS) per i test 
-├── src/ │ └── weatherApp.js # Funzioni principali: validazione, fetch dei dati, visualizzazione 
+Meteo-Test/
+├── index.html # Interfaccia utente principale
+├── styles.css # Stili CSS per l'interfaccia
+├── package.json # Configurazione del progetto Node.js
+├── jest.config.cjs # Configurazione di Jest (CommonJS) per i test
+├── src/ │ └── weatherApp.js # Funzioni principali: validazione, fetch dei dati, visualizzazione
 └── tests/ └── weatherApp.test.js # Test automatizzati (TDD) con Jest
 
 
