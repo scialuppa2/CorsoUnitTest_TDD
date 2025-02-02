@@ -25,7 +25,6 @@
         document.getElementById('searchBtn').addEventListener('click', async () => {
             const city = document.getElementById('cityInput').value;
 
-            // Validazione dell'input
             if (!validateCityName(city)) {
                 displayStatusMessage('Inserisci un nome di città valido.');
                 document.getElementById('weather').innerHTML = '';

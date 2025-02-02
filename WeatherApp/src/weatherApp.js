@@ -1,5 +1,3 @@
-// src/weatherApp.js
-
 /**
  * Verifica che il nome della città sia valido:
  * - Deve essere una stringa
@@ -7,7 +5,7 @@
  * - Non deve essere vuota
  * - Deve contenere solo lettere (inclusi caratteri accentati) e spazi
  */
-function validateCityName(city) {
+  function validateCityName(city) {
     if (typeof city !== 'string') return false;
     
     const trimmedCity = city.trim();
@@ -18,8 +16,8 @@ function validateCityName(city) {
     return regex.test(trimmedCity);
   }
   
-  const API_KEY = 'cb0406b83ffff909439df9bffab72fdd'; // Sostituisci con la tua chiave API di OpenWeatherMap
-  
+  const API_KEY = 'cb0406b83ffff909439df9bffab72fdd';
+
   /**
    * Recupera i dati meteo dalla API di OpenWeatherMap.
    * Utilizza l'endpoint forecast per ottenere i dati meteo a intervalli di 3 ore.
@@ -166,13 +164,12 @@ function validateCityName(city) {
     }
   }
   
-  // Esportiamo le funzioni per i test (se il modulo è definito)
-  if (typeof module !== 'undefined' && module.exports) {
-    module.exports = {
-      validateCityName,
-      fetchWeatherData,
-      displayWeatherData,
-      displayStatusMessage,
-    };
-  }
+  
+  module.exports = {
+    validateCityName,
+    fetchWeatherData,
+    displayWeatherData,
+    displayStatusMessage,
+  };
+  
   
