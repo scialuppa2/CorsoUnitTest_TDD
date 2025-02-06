@@ -9,7 +9,7 @@ describe('Validazione del Form - Test Unitari', () => {
         });
 
         test('ritorna un errore per nomi troppo corti', () => {
-            expect(validateName("San")).toBe("Il nome deve essere lungo almeno 3 caratteri.");
+            expect(validateName("Sa")).toBe("Il nome deve essere lungo almeno 3 caratteri.");
             expect(validateName("")).toBe("Il nome deve essere lungo almeno 3 caratteri.");
         });
     });
