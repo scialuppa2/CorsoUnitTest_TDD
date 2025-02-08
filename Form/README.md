@@ -3,6 +3,12 @@
 Questa applicazione consente di registrare prenotazioni tramite un form, dove l'utente inserisce il proprio nome, la propria email ed il numero di partecipanti. 
 Il progetto è stato sviluppato seguendo il paradigma del Test-Driven Development (TDD) e include sia test unitari che di integrazione per garantire il corretto funzionamento delle funzioni di validazione e del flusso di invio dei dati.
 
+## Screenshots
+
+![Screenshot del form](./images/Form_UnitTest.png)
+![Screenshot del risultato](./images/Prenotazioni_UnitTest.png)
+
+
 ## Struttura del Progetto
 
 Form/ ├── src/ 
