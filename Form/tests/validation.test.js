@@ -1,4 +1,4 @@
-const { validateName, validateEmail, validateParticipants } = require('../src/validation');
+import { validateName, validateEmail, validateParticipants } from '../src/validation.js'
 
 describe('Validazione del Form - Test Unitari', () => {
     // TEST PER LA VALIDAZIONE DEL NOME
@@ -35,6 +35,17 @@ describe('Validazione del Form - Test Unitari', () => {
             expect(validateParticipants(10)).toBe(null);
         });
 
+        test('accetta numeri validi anche come stringhe numeriche', () => {
+            expect(validateParticipants("3")).toBe(null);
+            expect(validateParticipants("10")).toBe(null);
+        });
+
+        test('ritorna un errore se il valore è null, undefined o vuoto', () => {
+            expect(validateParticipants(null)).toBe("Il numero di partecipanti deve essere un intero compreso tra 1 e 10.");
+            expect(validateParticipants(undefined)).toBe("Il numero di partecipanti deve essere un intero compreso tra 1 e 10.");
+            expect(validateParticipants("")).toBe("Il numero di partecipanti deve essere un intero compreso tra 1 e 10.");
+        });
+
         test('ritorna un errore se il numero non è tra 1 e 10', () => {
             expect(validateParticipants(0)).toBe("Il numero di partecipanti deve essere un intero compreso tra 1 e 10.");
             expect(validateParticipants(-3)).toBe("Il numero di partecipanti deve essere un intero compreso tra 1 e 10.");
@@ -44,6 +55,9 @@ describe('Validazione del Form - Test Unitari', () => {
         test('ritorna un errore se il valore non è un numero intero', () => {
             expect(validateParticipants("cinque")).toBe("Il numero di partecipanti deve essere un intero compreso tra 1 e 10.");
             expect(validateParticipants(3.5)).toBe("Il numero di partecipanti deve essere un intero compreso tra 1 e 10.");
+            expect(validateParticipants(true)).toBe("Il numero di partecipanti deve essere un intero compreso tra 1 e 10.");
+            expect(validateParticipants([])).toBe("Il numero di partecipanti deve essere un intero compreso tra 1 e 10.");
         });
     });
+
 });

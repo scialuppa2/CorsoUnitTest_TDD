@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="registrationForm">
+        <input type="text" name="name" placeholder="Nome" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="number" name="participants" placeholder="Numero partecipanti" required />
+        <button type="submit">Registrati</button>
+    </form>
+
+    <script type="module">
+        import { handleFormSubmit } from './src/form.js';
+
+        const form = document.getElementById('registrationForm');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = {
+                name: e.target.name.value,
+                email: e.target.email.value,
+                participants: Number(e.target.participants.value)
+            };
+
+            try {
+                const result = await handleFormSubmit(formData);
+                if (result.success) {
+                    alert("Registrazione effettuata con successo!");
+                } else {
+                    alert("Si sono verificati errori: " + JSON.stringify(result.errors));
+                }
+            } catch (err) {
+                console.error("Errore durante l'invio del form:", err);
+            }
+        });
+    </script>
+</body>
+
+</html>

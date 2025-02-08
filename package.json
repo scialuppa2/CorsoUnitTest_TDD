@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/scialuppa2/CorsoUnitTest_TDD#readme",
   "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0"
   }
