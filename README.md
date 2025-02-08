@@ -5,6 +5,8 @@ Questa repository contiene gli esercizi svolti durante il corso di **Unit Testin
 ## 📁 Struttura della Repository
 La repository è organizzata in cartelle, ognuna contenente un esercizio specifico:
 
+- **Form/** → [Per le prenotazioni tramite form]
+- **E-commerce/** → [Per la vendita di prodotti]
 - **Invoice-Management/** → [Per la gestione delle fatture]
 - **Statistica/** → [Per il calcolo di media, mediana, moda, varianza, ecc...]
 - **To-Do-List/** → [Per le attività svolte/da svolgere]
