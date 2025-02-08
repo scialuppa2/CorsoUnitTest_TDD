@@ -6,7 +6,8 @@ Il progetto è stato sviluppato seguendo il paradigma del Test-Driven Developmen
 ## Screenshots
 
 ![Screenshot del form](./images/Form_UnitTest.png)
-![Screenshot del risultato](./images/Prenotazioni_UnitTest.png)
+![Screenshot dell'errore](./images/ValidationError(2)_UnitTest.png)
+![Screenshot della prenotazione](./images/Prenotazioni_UnitTest.png)
 
 
 ## Struttura del Progetto
