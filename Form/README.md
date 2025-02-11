@@ -12,12 +12,13 @@ Il progetto è stato sviluppato seguendo il paradigma del Test-Driven Developmen
 
 ## Struttura del Progetto
 
-Form/ ├── src/ 
-    │ ├── form.js # Funzioni per gestire l'invio del form e la registrazione 
-    │ └── validation.js # Funzioni di validazione per i campi del form 
+Form/ 
+    ├── src/ 
+    │   ├── form.js # Funzioni per gestire l'invio del form e la registrazione 
+    │   └── validation.js # Funzioni di validazione per i campi del form 
     ├── tests/ 
-    │ ├── validation.test.js # Test unitari per le funzioni di validazione 
-    │ └── Integration.test.js # Test di integrazione per il flusso completo del form 
+    │   ├── validation.test.js # Test unitari per le funzioni di validazione 
+    │   └── Integration.test.js # Test di integrazione per il flusso completo del form 
     ├── index.html # Interfaccia utente del form di registrazione 
     └── style.css # Foglio di stile per migliorare l'interfaccia utente
 
