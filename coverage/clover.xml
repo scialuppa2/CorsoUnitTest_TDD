@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1739440035103" clover="3.2.0">
+  <project timestamp="1739440035103" name="All files">
+    <metrics statements="16" coveredstatements="16" conditionals="6" coveredconditionals="6" methods="8" coveredmethods="8" elements="30" coveredelements="30" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
+    <file name="todo.js" path="/home/fabrizio/repositories/CorsoUnitTest_TDD/Todo-app/src/todo.js">
+      <metrics statements="16" coveredstatements="16" conditionals="6" coveredconditionals="6" methods="8" coveredmethods="8"/>
+      <line num="46" count="6" type="stmt"/>
+      <line num="47" count="6" type="stmt"/>
+      <line num="52" count="6" type="stmt"/>
+      <line num="53" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="58" count="5" type="stmt"/>
+      <line num="63" count="5" type="stmt"/>
+      <line num="68" count="8" type="stmt"/>
+      <line num="73" count="2" type="stmt"/>
+      <line num="74" count="2" type="stmt"/>
+      <line num="76" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="83" count="2" type="stmt"/>
+      <line num="84" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="86" count="1" type="stmt"/>
+      <line num="88" count="1" type="stmt"/>
+      <line num="93" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>
