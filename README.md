@@ -5,17 +5,23 @@ Questa repository contiene gli esercizi svolti durante il corso di **Unit Testin
 ## 📁 Struttura della Repository
 La repository è organizzata in cartelle, ognuna contenente un esercizio specifico:
 
+- **Component/** → [Per la ricerca tramite SearchBar]
 - **Form/** → [Per le prenotazioni tramite form]
 - **E-commerce/** → [Per la vendita di prodotti]
 - **Invoice-Management/** → [Per la gestione delle fatture]
 - **Statistica/** → [Per il calcolo di media, mediana, moda, varianza, ecc...]
 - **To-Do-List/** → [Per le attività svolte/da svolgere]
+- **Todo-app/** → [Per l'utilizzo di ESLint per le correzioni del codice]
 - **WeatherApp/** → [Per controllare il meteo nelle città]
 
 Ogni esercizio segue il ciclo **TDD**:
 1. Scrittura del test 🧪
 2. Implementazione del codice 🖥️
 3. Refactoring 🔄
+
+## Screenshots del coverage
+
+![Screenshot del risultato del coverage](./images/Coverage.png)
 
 ## 🛠️ Setup e Installazione
 Per eseguire gli esercizi, assicurati di avere installato **Node.js** e **npm**. Poi, clona la repository e installa le dipendenze:
