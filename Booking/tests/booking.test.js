@@ -10,15 +10,15 @@ describe("Hotel Booking System", () => {
         ];
     });
 
-    test("should return only available rooms for the given date", () => {
+    test("Dovrebbe restituire solamente le camere disponibli per le date selezionate", () => {
         const result = searchAvailableRooms(rooms, "2025-03-01");
         expect(result).toEqual([{ id: 1, name: "Deluxe", availableDates: ["2025-03-01", "2025-03-02"] }]);
     });
 
-    test("should confirm booking if room is available", () => {
+    test("Dovrebbe confermare la prenotazione se la camera è disponibile", () => {
         const bookingResult = bookRoom(rooms, 1, "2025-03-01");
         expect(bookingResult.success).toBe(true);
-        expect(bookingResult.message).toBe("Booking confirmed for room Deluxe on 2025-03-01");
+        expect(bookingResult.message).toBe("Prenotazione confermata per la camere Deluxe per il 2025-03-01");
     });
 });
 
