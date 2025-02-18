@@ -1,4 +1,4 @@
-const { searchAvailableRooms, bookRoom } = require("../hotelBooking");
+import { searchAvailableRooms, bookRoom } from "../src/booking.js"
 
 describe("Hotel Booking System", () => {
     let rooms;
