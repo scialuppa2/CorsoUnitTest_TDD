@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1739871030309" clover="3.2.0">
-  <project timestamp="1739871030309" name="All files">
-    <metrics statements="223" coveredstatements="181" conditionals="144" coveredconditionals="111" methods="61" coveredmethods="58" elements="428" coveredelements="350" complexity="0" loc="223" ncloc="223" packages="10" files="12" classes="12"/>
+<coverage generated="1740047796084" clover="3.2.0">
+  <project timestamp="1740047796084" name="All files">
+    <metrics statements="239" coveredstatements="197" conditionals="150" coveredconditionals="115" methods="76" coveredmethods="72" elements="465" coveredelements="384" complexity="0" loc="239" ncloc="239" packages="11" files="13" classes="13"/>
     <package name="Booking.src">
       <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="4"/>
       <file name="booking.js" path="/home/fabrizio/repositories/CorsoUnitTest_TDD/Booking/src/booking.js">
@@ -165,6 +165,28 @@
         <line num="53" count="1" type="stmt"/>
         <line num="57" count="4" type="stmt"/>
         <line num="61" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Recipe-Manager.src">
+      <metrics statements="16" coveredstatements="16" conditionals="6" coveredconditionals="4" methods="15" coveredmethods="14"/>
+      <file name="recipe.js" path="/home/fabrizio/repositories/CorsoUnitTest_TDD/Recipe-Manager/src/recipe.js">
+        <metrics statements="16" coveredstatements="16" conditionals="6" coveredconditionals="4" methods="15" coveredmethods="14"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="cond" truecount="3" falsecount="1"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
       </file>
     </package>
     <package name="Statistica.src">

@@ -5,10 +5,12 @@ Questa repository contiene gli esercizi svolti durante il corso di **Unit Testin
 ## 📁 Struttura della Repository
 La repository è organizzata in cartelle, ognuna contenente un esercizio specifico:
 
+- **Booking/** → [Per la prenotazione delle camere]
 - **Component/** → [Per la ricerca tramite SearchBar]
 - **Form/** → [Per le prenotazioni tramite form]
 - **E-commerce/** → [Per la vendita di prodotti]
 - **Invoice-Management/** → [Per la gestione delle fatture]
+- **Recipe-Manager/** → [Per la ricerca e gestione delle ricette]
 - **Statistica/** → [Per il calcolo di media, mediana, moda, varianza, ecc...]
 - **To-Do-List/** → [Per le attività svolte/da svolgere]
 - **Todo-app/** → [Per l'utilizzo di ESLint per le correzioni del codice]

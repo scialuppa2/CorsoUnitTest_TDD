@@ -18,7 +18,7 @@ describe("Hotel Booking System", () => {
     test("Dovrebbe confermare la prenotazione se la camera è disponibile", () => {
         const bookingResult = bookRoom(rooms, 1, "2025-03-01");
         expect(bookingResult.success).toBe(true);
-        expect(bookingResult.message).toBe("Prenotazione confermata per la camere Deluxe per il 2025-03-01");
+        expect(bookingResult.message).toBe("Prenotazione confermata per la camera Deluxe per il 2025-03-01");
     });
 });
 
